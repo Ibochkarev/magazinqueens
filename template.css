@@ -801,6 +801,7 @@ input.qtyminus {
     text-transform: uppercase;
     text-align: center;
     /*background: url("../img/item_line.png") no-repeat 50% 100%;*/
+    
     margin: 40px 0 0 0;
     padding-bottom: 25px;
     font-family: "proxima-nova", sans-serif;
@@ -1361,7 +1362,7 @@ ul.blog-nav {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
-    padding-left: 0;      
+    padding-left: 0;
 }
 
 ul.blog-nav li {
@@ -1372,9 +1373,10 @@ ul.blog-nav li a {
     padding-right: 75px;
     color: #999;
 }
-ul.blog-nav li a.last{
+
+ul.blog-nav li a.last {
     padding-right: 0;
-} 
+}
 
 ul.blog-nav li a.active,
 ul.blog-nav li a:hover {
@@ -1386,7 +1388,7 @@ ul.blog-nav li a:hover {
 }
 
 #news_select {
-      margin: 70px 0 90px 0;
+    margin: 70px 0 90px 0;
 }
 
 .label_news_select {
@@ -1497,7 +1499,8 @@ img.ri {
     margin-bottom: 40px;
 }
 
-.news_item:hover {
+.news_item:hover,
+.news_item_b:hover {
     -webkit-transition: all 150ms;
     transition: all 150ms;
     -moz-opacity: 0.80;
@@ -2178,31 +2181,63 @@ ul.social_linc_ic li:hover {
     margin: 37px 0 20px 0;
     padding-left: 80px
 }
-.share-block{
-	margin-bottom: 30px;
-}
-.read-more .title-block-sl{
-	margin-bottom: 25px;
-}
-.title_slide_post{
-	padding: 20px 0;
-	border-bottom: 1px solid #a4a4a4;
-	border-top: 1px solid #a4a4a4;
-	margin-top: 25px;
+
+.share-block {
+    margin-bottom: 30px;
 }
 
-.title_slide_post_item a{
-	color:#b4b4b4;
-	text-transform: uppercase;
-	text-decoration: underline;
-	text-decoration-color: #bfbfbf;
+.read-more .title-block-sl {
+    margin-bottom: 25px;
 }
 
-.title_slide_post_item a.active{
-	color:#000;
+.title_slide_post {
+    padding: 20px 0;
+    border-bottom: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    margin-top: 25px;
 }
 
+.title_slide_post_item a {
+    color: #b4b4b4;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #bfbfbf;
+}
 
+.title_slide_post_item a.active {
+    color: #000;
+}
+
+.news_item_b {
+    text-align: center;
+    color: #939598;
+    padding: 10px 0;
+    font-family: "proxima-nova", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    height: 450px;
+    margin-bottom: 80px;
+}
+
+.news_item_b .news_item_title {
+    font-weight: 700;
+}
+
+.date_item_news {
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    margin: 0 0 30px 0;
+}
+.info_descr {
+    padding-top: 30px;
+    border-top: 1px solid #e5e5e5;
+}
+section.nav-blog {
+    padding-top: 25px;
+    border-top: 1px solid;
+}
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 
