@@ -20,7 +20,7 @@
 
 .hdr__main:hover,
 .hdr__main.hover {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    background: none repeat scroll 0 0 #fff;
 }
 
 .hdr__main.no {
@@ -2183,7 +2183,7 @@ ul.social_linc_ic li:hover {
 }
 
 .share-block {
-    margin-bottom: 30px;
+    margin: 17px 0 30px 0;
 }
 
 .read-more .title-block-sl {
@@ -2192,8 +2192,8 @@ ul.social_linc_ic li:hover {
 
 .title_slide_post {
     padding: 20px 0;
-    border-bottom: 1px solid #a4a4a4;
-    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
     margin-top: 25px;
 }
 
@@ -2203,7 +2203,9 @@ ul.social_linc_ic li:hover {
     text-decoration: underline;
     text-decoration-color: #bfbfbf;
 }
-
+.title_slide_post_item a:hover {
+  color: #414042;
+}
 .title_slide_post_item a.active {
     color: #000;
 }
