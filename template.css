@@ -70,7 +70,26 @@
 
 .hdr__search {
     float: left;
-    padding: 30px 0 0 30px;
+    padding: 26px 0 0 30px;
+}
+#mse2_form input[type=search] {
+    background: url(/tpl/img/find.svg) no-repeat 6px center;
+    border: none;
+    padding: 9px 6px 8px 29px;
+    width: 110px;
+    color: #000;
+    -moz-transition: width 300ms;
+    -webkit-transition: width 300ms;
+    transition: width 300ms;
+    height: 27px !important;
+    background-size: 14px 14px;
+    font-size: 12px;
+}
+#mse2_form input[type=search]:focus {
+    width: 154px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
 }
 
 .navbar {
@@ -2084,7 +2103,13 @@ hr.line_b {
     background-color: #eee;
     height: 1px;
 }
-
+#line_b {
+    margin: 0 0 35px 0;
+    border: none;
+    color: #eee;
+    background-color: #eee;
+    height: 1px;
+}
 form.register_form {
     font-family: "proxima-nova", sans-serif;
     font-style: normal;
@@ -2170,7 +2195,7 @@ ul.social_linc_ic li:hover {
     opacity: 0.4;
 }
 
-​legend.auth {
+legend.auth {
     font-weight: 700;
     margin-left: 0px;
     margin-bottom: 20px;
@@ -2240,6 +2265,130 @@ section.nav-blog {
     padding-top: 25px;
     border-top: 1px solid;
 }
+.hd_search_tp{
+    margin-top: 70px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 70px;
+}
+.hd_search_tp .select-sort{
+    float: right;
+    padding-top: 0;
+}
+.search_tp_title{
+	font-style: normal;
+    font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.search_tp_none h3{
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 40px;
+    color: #dadada;
+    text-transform: uppercase;
+}
+.search_info{
+    color: #333;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 45px;
+}
+#search_bg {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 260px;
+}
+form.search_form_non input {
+    width: 330px;
+    height: 35px;
+    padding: 9px 6px 8px 29px;
+    background-color: #ededed;
+    border: 1px solid #ececec;
+    border-color: #999!important;
+    background: url(/tpl/img/find.svg) no-repeat 6px center;
+    background-size: 14px 14px;
+    
+}
+.search_tp_none h5 {
+    font-weight: 700;
+    font-size: 14px;
+}
+.all_brands{
+    margin-bottom: 150px;
+}
+/* Outfit styles */
+.list_outfit{
+    margin-top: 70px;
+}
+.outfit_item{
+    height: 420px;
+    margin-bottom: 80px;
+}
+.date_outfit {
+    color: #999;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.outfit_info h3, .meta_outfit h3 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.outfit_info p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+.outfit_item a:hover .outfit_info p, .outfit_item a:hover .date_outfit {
+    color: #333;
+}
+
+.outfit_item a:hover .outfit_info h3 {
+    color: #333;
+    text-decoration: underline;
+}
+
+.outfit_item a:hover .outfit_img {
+    opacity: 0.8;
+}
+.btn-more-outfit{
+    margin-bottom: 150px;
+    text-align: center;
+}
+.c-btn_more_outfit {
+    text-transform: uppercase;
+}
+.meta_outfit h3{
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.outfit_item_sl .img_ri{
+    opacity: .7;
+}
+.img_ri.active {
+    opacity: 100;
+}
+.img_ri{
+    max-width:100% !important;
+    height:auto;
+    display:block;
+    margin-bottom: 20px;
+}
+.descr_outfit {
+    margin-top: 80px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.descr_outfit h3{
+    font-size: 26px;
+}
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 
@@ -2270,9 +2419,9 @@ section.nav-blog {
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
-    .filter-box {
+    /*.filter-box {
         display: none;
-    }
+    }*/
     .navigation {
         border: 0;
     }
@@ -2287,6 +2436,7 @@ section.nav-blog {
     .slider__slide img {
         height: auto;
     }
+
 }
 /* Extra Small Devices, Phones */
 
@@ -2366,7 +2516,7 @@ section.nav-blog {
         float: inherit;
     }
     h2.items-title {
-        margin-top: 0;
+        margin-top: 30px;
     }
     .profile_form li input,
     .profile_form li select,
@@ -2388,6 +2538,24 @@ section.nav-blog {
     }
     .address_item {
         margin-bottom: 0;
+    }
+    a.link_product_slider{
+        top: 30%;   
+    }
+    .arrows-caption {
+        height: 40px;
+    }
+    #slide-caption{
+        font-size: 20px;
+    }
+    .item-txt{
+        height: 50px;
+    }
+    .good-item#good-item-catt{
+        height: 280px;
+    }
+    .breadcrumbs span {
+        font-size: 9px;
     }
 }
 /* Custom, iPhone Retina */
